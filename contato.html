@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto Portifólio">
+    <meta name="author" content="Paola Patricia">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <title> Meu Perfil</title>
+</head>
+<body>
+    
+    <!--Cabeçalho da Pag-->
+    <header>
+
+        <!--Div conteudo do cabeçalho-->
+        <div id="header_content">
+
+            <!--Titulo do cabeçalho-->
+            <div id="titulo">
+                <h1> Paola Patricia </h1>
+            </div>
+
+            <!--Conteudo do Menu da Pag (header)-->
+            <div id="menu">
+                <nav>
+                    <ul id="menu">
+                        <li>
+                            <a href="index.html"> Home </a>
+                        </li>
+
+                        <li>
+                            <a href="contato.html"> Contato </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--Seção Principal-->
+    <main>
+        <!--Seção Formulario de Contato e redes sociais-->
+        <section id="contact">
+
+            <!--Seção do formulario-->
+            <form action="#" method="submit" id="formulario"> 
+
+                <label for="name"> Nome: </label>
+                <!--placeholder - usada para exibir um texto, em cinza claro, dentro do input quando o campo estiver vazio-->
+                <input id="name" type="text" name="name" placeholder="Digite o seu nome">
+                <span id="txtNome"></span>
+
+                <label for="email"> E-mail: </label>
+                <input id="email" type="text" name="email" placeholder="Digite seu e-mail">
+                <span id="txtEmail"></span>
+
+                <label for="subject"> Assunto: </label>
+                <input id="subject" type="text" name="subsject" placeholder="Digite o título da mensagem">
+                <span id="txtSubject"></span>
+
+                <label for="message"> Mensagem: </label>
+                <!--textarea - Cria uma caixa de mensagem-->
+                <textarea id="message" name="message" placeholder="Digite a sua mensagem"> </textarea>
+
+                <button type="submit"> Enviar </button>
+
+            </form>               
+          
+            <!--Seção Google Maps-->
+            <article id="mapa">
+
+                <p> Av. Paulista, 100</p>
+                <p> São Paulo </p>
+
+                <!-- <iframe> - permite incorporar conteúdo de outras origens (outros sites) em nossa página da web, especialmente conteúdos multimídia  -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.9302518413288!2d-46.64661892910219!3d-23.570948378793144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59bd92bce431%3A0xc37ded133806ef0b!2sAv.%20Paulista%2C%20100%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-000!5e0!3m2!1spt-BR!2sbr!4v1738624372832!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </article>
+        </section>
+    </main>
+
+    <!--Rodape-->
+    <footer>
+        <!--Seção de contatos - redes sociais-->
+        <section id="redes_sociais">
+            <a href="">
+                <img src="./assets/img/linkedin.svg" alt="LinkedIn"/>
+            </a>
+
+            <a href="">
+                <img src="./assets/img/github.svg" alt="GitHub"/>
+            </a>
+
+            <a href="">
+                <img src="./assets/img/instagram.svg" alt="Instagram"/>
+            </a>
+
+        </section>
+
+        <h3> Feito com 💕 por Paola Patricia - 2025</h3>
+    </footer>
+</body>
+</html>
