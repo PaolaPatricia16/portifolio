@@ -10,12 +10,17 @@
     <meta name="keyword" content="HTML, CSS, JavaScript">
     <link rel="icon" type="image/svg" href="./assets/img/favicon.svg"/>
     <title> Meu Perfil </title>
+
+    <link rel="stylesheet" href="./reset.css"/>
+    <link rel="stylesheet" href="./style.css"/>
+
+
 </head>
 <body>
     <!--Cabeçalho da Página-->
     <header>
         <!--Div Conteudo do Cabeçalho-->
-        <div id="header_content"> 
+        <div id="header_content" class="flex"> 
 
             <!--Titulo do cabeçalho-->
             <div id="titulo">
@@ -51,14 +56,14 @@
     <main>
 
         <!--Seção Sobre voce-->
-        <section id="about">
+        <section id="about"  class="flex_start">
 
             <!--Título da Seção-->
             <h2> Sobre Paola Patricia </h2>
 
             <!--Conteúdo da Seção-->
-            <div id="conteudo">
-                <img src="./assets/img/Eu.jpeg" alt="Foto da criadora deste conteúdo"/>
+            <div id="conteudo" class="flex">
+                <img src="./assets/img/Eu.jpeg" alt="Foto da criadora deste conteúdo" class="img"/>
 
                 <!--Texto sobre a criadora do conteúdo-->
                 <article id="sobre_texto">
@@ -79,13 +84,13 @@
         </section>
 
         <!--Seção contendo um vídeo de sua preferencia-->
-        <section id="video">
+        <section id="video" class="flex_start">
 
             <!--Titulo da Seção-->
             <h2> Meu vídeo favorito </h2>
 
             <!--Vídeo da Seção-->
-            <div id="youtube">
+            <div id="youtube" class="flex">
                 <!--Permite incorporar conteúdo de outras origens (outros sites) em nossa página da web, especialmente conteúdos multimídia-->
                 <iframe
                 width="560" height="315" src="https://www.youtube.com/embed/Ax2A7loBync?si=gciW7prT_oq_WoS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
@@ -95,7 +100,7 @@
     </main>
 
     <!--Rodapé da Página-->
-    <footer>
+    <footer class="flex">
 
         <!--Seção de Contato - Redes Sociais-->
         <section id="redes_sociais">
@@ -117,4 +122,5 @@
        
     </footer>
 </body>
+
 </html>

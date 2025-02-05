@@ -7,6 +7,10 @@
     <meta name="author" content="Paola Patricia">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <title> Meu Perfil</title>
+
+    <link rel="stylesheet" href="./reset.css"/>
+    <link rel="stylesheet" href="./style.css"/>
+    
 </head>
 <body>
     
@@ -14,7 +18,7 @@
     <header>
 
         <!--Div conteudo do cabeçalho-->
-        <div id="header_content">
+        <div id="header_content" class="flex">
 
             <!--Titulo do cabeçalho-->
             <div id="titulo">
@@ -42,7 +46,7 @@
     <!--Seção Principal-->
     <main>
         <!--Seção Formulario de Contato e redes sociais-->
-        <section id="contact">
+        <section id="contact" class="flex">
 
             <!--Seção do formulario-->
             <form action="#" method="submit" id="formulario"> 
@@ -69,7 +73,7 @@
             </form>               
           
             <!--Seção Google Maps-->
-            <article id="mapa">
+            <article id="mapa" class="flex_start">
 
                 <p> Av. Paulista, 100</p>
                 <p> São Paulo </p>
@@ -83,19 +87,19 @@
     </main>
 
     <!--Rodape-->
-    <footer>
+    <footer class="flex">
         <!--Seção de contatos - redes sociais-->
         <section id="redes_sociais">
             <a href="">
-                <img src="./assets/img/linkedin.svg" alt="LinkedIn"/>
+                <img src="./assets/img/linkedin.svg" alt="LinkedIn" class="social_icon"/>
             </a>
 
             <a href="">
-                <img src="./assets/img/github.svg" alt="GitHub"/>
+                <img src="./assets/img/github.svg" alt="GitHub" class="social_icon"/>
             </a>
 
             <a href="">
-                <img src="./assets/img/instagram.svg" alt="Instagram"/>
+                <img src="./assets/img/instagram.svg" alt="Instagram" class="social_icon"/>
             </a>
 
         </section>

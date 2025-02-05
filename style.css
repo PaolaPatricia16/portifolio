@@ -1,0 +1,250 @@
+:root{ /*Variáveis de fonte */
+    --pink1:#d17bc0;
+    --pink2:#c836a3;
+    --pink3:#dc159a;
+
+    --black-800: #171717;
+
+    --pink4:#d4b3c7;
+    --gray-400: #505861;
+
+    --white: #F9F9F9;
+}
+
+html{ /* Seleciona o elemento HTML (ou seja, a pag toda) */
+    widht: 100%; /*largura*/
+    height: 100vh; /*altura*/
+}
+
+body{
+    background: var(--pink4);
+    color: var(--black-800);
+}
+
+/* Títulos e paragrafo */
+h1{
+    color: var(--white);
+    font-size: 2rem; /* Rem unidade usada para desgin responsivo. 1rem = 16px */
+    font-weight: 700; /* Negrito */
+}
+
+h2{
+    padding: 1rem; /* Cria espaçamento ao redor do conteúdo do elemento. Neste caso será de 1rem em todos os lados (em cima, direita, em baixo e esquerda) */
+    color: var(--black-800);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: left; /* alinhamento do texto */
+}
+
+h3{
+    padding: 1rem;
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    padding: 0.5rem 0;
+}
+
+.img{
+    overflow: hidden;
+}
+
+/* configurações do Flexbox */
+
+.flex{ /*Classe criada, que quando chamada no HTML será aplicada as config abaixo */
+    display: flex; /* elemento flexivel */
+    justify-content: center; /* eixo horizontal centralizado */
+    align-items: center; /*eixo vertical centralizado */
+}
+
+
+.img{
+
+    width: 40rem;
+
+}
+
+.flex_start{
+    display: flex;
+    justify-content: flex-start; /* eixo horizontal, alinhado iniciando à esquerda */
+
+}
+
+/* Seção Header */
+#header_content {
+    height: 80px; /*altura*/
+    position: sticky;  /* stick - conteúdo 'passa por debaixo' da header ao rolar a pag */
+    top: 0; /*espaçamento vertical, entre os elementos: body e header */
+    width: 100%; /* ocupa 100% da largura da tela */
+    justify-content: space-between;
+    padding: 24px;
+    background-color: var(--pink3);
+    border-bottom: 1px solid var(--pink2);
+}
+ 
+ #menu li {
+    display: inline;
+    padding: 1rem;
+ }
+ 
+ #menu li a { /* aplica a tag <a> */
+    text-decoration: none; /*remove sublinhado dos links */
+    color: var(--white);
+    font-size: 20px;
+ }
+ 
+ #menu li a:hover { /* pseudo-classe :hover add um estilo quando o mouse esta sobre o elemnto, aplica a tag <a>  */
+    color: var(--pink1);
+    text-decoration: underline; /* ativa o sublinhado nos links quando o mouse esta em cima */
+ }
+
+
+/* Seção About */
+
+#about{
+    flex-direction: column; /* os elementos serão alinhdos em colunas */
+    margin: 2rem auto; /* define a margem inferior e superior 2rem, direita e esquerda automatico(calculado de acordo com o espaço livre) */
+    width: 90%; /* ocupa 90% de largura */
+ }
+
+#conteudo{
+    flex-direction: row; /* os elementos serão alinhados em linha, um do lado do outro */
+    gap: 2rem; /* define o espeçamento entre linhas e colunas */
+
+}
+
+
+
+/* Seção Video */
+
+#video{
+    flex-direction: column;
+    margin: 2rem auto;
+    width: 90%;
+ }
+
+
+
+ /* Seção Footer */
+
+footer{
+    flex-direction: column;
+    margin: 0;
+    padding: 2rem;
+    color: var(--white);
+    background-color: var(--pink2);
+    font-weight: bold;
+    text-align: center;
+}
+
+#redes_sociais {
+    display: flex;
+    justify-content: space-evenly; 
+    margin: 1rem 0 0 0;
+    width: 320px;
+}
+
+.social_icon {
+    width: 4rem;
+    height: 4rem;
+    filter: brightness(0) 
+            saturate(100%) 
+            invert(100%) 
+            sepia(0%) 
+            saturate(7457%) 
+            hue-rotate(23deg) 
+            brightness(95%) 
+            contrast(87%);
+}
+
+.social_icon:hover {  
+    filter: brightness(0) 
+            saturate(100%) 
+            invert(65%) 
+            sepia(59%) 
+            saturate(2437%) 
+            hue-rotate(213deg) 
+            brightness(86%) 
+            contrast(88%);
+}
+
+
+
+/*Página de Contato*/
+ 
+#contact{
+    flex-direction: row;
+    gap: 2rem;
+ }
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border: none;
+}
+
+form label {
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 500;
+}
+
+form input,
+textarea {
+    margin: 0.5rem 0 1rem;
+    padding: 0.5rem;
+    border-radius: 1.25rem;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+    height: 5rem;
+}
+
+form span{
+    margin: 0 0 0.5rem 0.75rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: red;
+}
+
+form button {
+    text-align: center;
+    padding: 0.75rem 2rem;
+    background: var(--pink3);
+    border: 1px solid var(--pink2);
+    color: var(--white);
+    border-radius: 0.75rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background: var(--pink2);
+}
+
+/*  Mapa */
+#mapa{
+    width: 480px;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#endereco > p{
+    font-size: 1rem;
+    text-align: justify;
+    font-weight: 700;
+
+}
