@@ -12,7 +12,7 @@
 }
 
 html{ /* Seleciona o elemento HTML (ou seja, a pag toda) */
-    widht: 100%; /*largura*/
+    width: 100%; /*largura*/
     height: 100vh; /*altura*/
 }
 
@@ -51,9 +51,6 @@ p{
     padding: 0.5rem 0;
 }
 
-.img{
-    overflow: hidden;
-}
 
 /* configurações do Flexbox */
 
@@ -64,11 +61,6 @@ p{
 }
 
 
-.img{
-
-    width: 40rem;
-
-}
 
 .flex_start{
     display: flex;
@@ -120,6 +112,9 @@ p{
 }
 
 
+.img_profile{
+    width: 200px;
+}
 
 /* Seção Video */
 
@@ -242,9 +237,9 @@ form button:hover {
     gap: 3rem;
 }
 
-#endereco > p{
+p{
     font-size: 1rem;
     text-align: justify;
-    font-weight: 700;
+    font-weight: bold;
 
 }
